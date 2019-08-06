@@ -6,11 +6,9 @@ import android.view.animation.Animation;
 import android.view.animation.Transformation;
 
 /**
- * Created by wldev on 3/10/17.
- */
-
+ * Created by Divya Gupta on 05-Aug-19.
+ **/
 public class ViewAnimationUtils {
-
     public static void expand(final View v, final AnimationEndCallback callback, boolean fast) {
         v.measure(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         final int targtetHeight = v.getMeasuredHeight();

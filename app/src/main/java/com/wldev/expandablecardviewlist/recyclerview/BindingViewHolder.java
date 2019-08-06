@@ -1,31 +1,30 @@
 package com.wldev.expandablecardviewlist.recyclerview;
 
-import android.databinding.DataBindingUtil;
-import android.databinding.ViewDataBinding;
-import android.support.annotation.LayoutRes;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-/**
- * Created by wldev on 3/10/17.
- */
+import androidx.annotation.LayoutRes;
+import androidx.annotation.NonNull;
+import androidx.databinding.DataBindingUtil;
+import androidx.databinding.ViewDataBinding;
+import androidx.recyclerview.widget.RecyclerView;
 
+/**
+ * Created by Divya Gupta on 05-Aug-19.
+ **/
 public class BindingViewHolder<ViewBinding extends ViewDataBinding> extends RecyclerView.ViewHolder {
 
-    private ViewBinding binding;
-
-    public BindingViewHolder(ViewBinding binding) {
+    private ViewBinding viewBinding;
+    public BindingViewHolder(@NonNull ViewBinding binding) {
         super(binding.getRoot());
-        this.binding = binding;
+        this.viewBinding = binding;
     }
 
     public BindingViewHolder(@LayoutRes int layout, ViewGroup parent) {
-        this(DataBindingUtil.<ViewBinding>inflate(LayoutInflater.from(parent.getContext()), layout, parent, false));
+        this(DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()), layout, parent, false));
     }
 
     public ViewBinding getBinding() {
-        return binding;
+        return viewBinding;
     }
 }
-

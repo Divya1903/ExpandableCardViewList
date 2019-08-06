@@ -1,36 +1,30 @@
 package com.wldev.expandablecardviewlist.data;
 
-import android.databinding.BaseObservable;
-import android.databinding.Bindable;
-
-import com.wldev.expandablecardviewlist.BR;
-
+import androidx.databinding.BaseObservable;
+import androidx.databinding.Bindable;
+import androidx.databinding.library.baseAdapters.BR;
 
 /**
- * Created by wldev on 7/7/17.
- * Purpose:
- */
+ * Created by Divya Gupta on 05-Aug-19.
+ **/
+public class ExpandedStateItem extends BaseObservable {
 
-public class ExpandStateItem extends BaseObservable {
-
-    @Bindable
-    private boolean expanded;
-
-    @Bindable
     private float margin;
 
-    @Bindable
+    private boolean expanded;
+
     private boolean fast;
 
-    public ExpandStateItem(boolean expanded) {
+    public ExpandedStateItem(boolean expanded) {
         this.expanded = expanded;
     }
 
-    public ExpandStateItem(boolean expanded, float margin) {
+    public ExpandedStateItem(boolean expanded, float margin) {
         this.expanded = expanded;
         this.margin = margin;
     }
 
+    @Bindable
     public boolean isFast() {
         return fast;
     }
@@ -40,10 +34,12 @@ public class ExpandStateItem extends BaseObservable {
         notifyPropertyChanged(BR.fast);
     }
 
+    @Bindable
     public boolean isExpanded() {
         return expanded;
     }
 
+    @Bindable
     public float getMargin() {
         return margin;
     }

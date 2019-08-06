@@ -42,6 +42,27 @@
   <li>Mobile apps</li>
   <li>Offline viewing</li>
 </ul>]]></string>
+    <string name="arrow_icon">Arrow icon</string>
 
+    <string-array name="questions_array">
+        <item name="question_1">What is Behtar?</item>
+        <item name="question_2">Do you do delivery?</item>
+        <item name="question_3">Is discount offered on all products?</item>
+        <item name="question_4">Do you have any other offers running?</item>
+        <item name="question_5">What are the store timings?</item>
+        <item name="question_6">Do you keep only packaged rice, dal and other staples?</item>
+        <item name="question_7">Can I buy fresh fruits and vegetables from here?</item>
+        <item name="question_8">Which is my nearest store?</item>
+    </string-array>
+    <string-array name="answers_array">
+        <item name="answer_1">We are a network of \'Deep Discounted\' grocery and daily essentials stores which provide convenience, value and variety next door.</item>
+        <item name="answer_2">Not as of now.</item>
+        <item name="answer_3">Yes, we have minimum 11% to 50% OFF on everything, everyday.</item>
+        <item name="answer_4">Yes, from time to time we have different offers running, from Buy One Get One Free to flat 20% off and more on everything. Keep checking the app to stay updated with the offers.</item>
+        <item name="answer_5">8AM-10PM everyday.</item>
+        <item name="answer_6">We have a wide variety of branded and loose staples, in different mrp ranges.</item>
+        <item name="answer_7">Currently we do not have fresh fruits and vegetables.</item>
+        <item name="answer_8">You can find your nearest store here:</item>
+    </string-array>
 
 </resources>
